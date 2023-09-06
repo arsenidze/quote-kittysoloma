@@ -6,31 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap -->
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   <title>Под'яка від Солом'янських котиків</title>
-  <meta property="og:image" content="http://krasche.a3.kyiv.ua/i/og-image.jpg" />
-  <meta property="og:image:secure_url" content="http://krasche.a3.kyiv.ua/i/og-image.jpg" />
+  <meta property="og:image" content="./images/thx-social-preview.jpg" />
+  <meta property="og:image:secure_url" content="./images/thx-social-preview.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="628" />
   <meta property="og:image:alt"
-    content="Краще б щось корисне зробили, а не генератор фраз для коментарів у фейсбуці." />
+    content="Под'яка від Солом'янських котиків" />
 
   <meta charset="utf-8">
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
   <link href="css/likely.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/qanelas?styles=47990" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js/likely.js" type="text/javascript"></script>
   <script type="text/javascript">
     var quotes = [
       "Краще б… <br />дороги поремонтували.",
@@ -232,21 +227,32 @@
       border-color: #acf0b2;
     }
 
+    .btn-outline-primary:hover {
+      color: #fff;
+      background-color: #acf0b2;
+      border-color: #acf0b2;
+    }
+
     .thx-image {
       width: 240px;
       margin: 0 auto;
       transform: rotate(-8deg);
     }
+
+    .social-media {
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .social-media a {
+      margin-right: 16px;
+      scale: 1.5;
+      color: #acf0b2;
+    }
   </style>
 </head>
 
-
-</style>
-</head>
-
 <body>
-
-
   <div class="container col-12 bcontainer">
     <div class="row offset-md-1 offset-lg-2">
       <div class="col-10 mb-4">
@@ -310,8 +316,7 @@
             <path
               d="M239.26 494.07C222.245 491.895 205.464 488.418 189.109 483.679C172.645 479 156.627 473.159 141.213 466.213C125.641 459.277 110.867 451.022 97.1041 441.569C83.3783 432.044 70.6958 421.141 60.5387 408.563C60.1329 408.048 59.9501 407.423 60.0236 406.804C60.0881 406.18 60.4125 405.602 60.9348 405.179C61.4572 404.756 62.1439 404.523 62.8584 404.526C63.5464 404.533 64.2109 404.759 64.7287 405.161C77.2416 415.03 90.5048 424.14 104.424 432.425C118.287 440.648 132.659 448.184 147.471 454.996C162.294 461.838 177.558 467.883 193.074 473.573C208.589 479.263 224.449 484.202 240.49 489.107C241.176 489.328 241.741 489.772 242.07 490.345C242.417 490.898 242.521 491.541 242.365 492.153C242.216 492.762 241.811 493.297 241.231 493.653C240.661 494.01 239.959 494.168 239.259 494.095L239.26 494.07Z"
               fill="black" />
-            <path
-              id="myPath"
+            <path id="myPath"
               d="M217.458 710.89C215.195 712.14 206.55 710.941 194.794 709.309C182.983 707.671 167.664 705.851 151.712 701.876C107.85 690.945 79.3083 675.274 66.3284 647.911C53.3485 620.549 65.0078 587.845 92.3701 574.865C118.629 562.408 148.709 570.328 159.433 588.571C152.089 568.725 164.985 540.419 191.244 527.962C218.606 514.982 251.31 526.642 264.29 554.004C277.27 581.366 271.351 613.385 252.069 654.269C244.08 671.207 236.775 682.153 230.572 692.338C224.398 702.474 219.858 709.928 217.458 710.89Z"
               fill="red" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -360,7 +365,7 @@
         <a href="https://kittysoloma.org/" class="btn btn-outline-primary">задонатити ще</a>
         <a href="https://kittysoloma.org/" class="btn btn-outline-secondary">отримати подяку</a>
       </div>
-      <div class="col-sm-12 col-md-10 col-lg-8" style="margin-top: 20px;">
+      <div class="col-sm-12 col-md-10 col-lg-8 mt-3 mb-4">
         <div class="likely">
           <div class="facebook">Поділитися в фб</div>
           <div class="twitter">Твітнути</div>
@@ -373,23 +378,14 @@
 
   <footer class="footer">
     <div class="container col-12">
-      <div class="row offset-md-1 offset-lg-2">
-        <div class="col">
-          <span>Под'яка від Солом'янських котиків</span>
-
-          <span style="margin-left: 5px;">
-            <a href="https://www.facebook.com/kittysoloma" target="_blank" rel="noreferrer">Facebook</a>
-            <a href="https://www.instagram.com/kitty_soloma" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://t.me/kitty_soloma" target="_blank" rel="noreferrer">Telegram</a>
-            <a href="https://twitter.com/kitty_soloma" target="_blank" rel="noreferrer">Twitter</a>
-          </span>
-        </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/kittysoloma" target="_blank" rel="noreferrer" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/kitty_soloma" target="_blank" rel="noreferrer" class="fa fa-instagram"></a>
+        <a href="https://t.me/kitty_soloma" target="_blank" rel="noreferrer" class="fa fa-telegram"></a>
+        <a href="https://twitter.com/kitty_soloma" target="_blank" rel="noreferrer" class="fa fa-twitter"></a>
       </div>
     </div>
   </footer>
 
-  <script src="js/likely.js" type="text/javascript"></script>
-
 </body>
-
 </html>

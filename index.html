@@ -12,100 +12,22 @@
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="948" />
   <meta property="og:image:height" content="1280" />
-  <meta property="og:image:alt"
-    content="Под'яка від Солом'янських котиків" />
+  <meta property="og:image:alt" content="Под'яка від Солом'янських котиків" />
 
   <meta charset="utf-8">
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/likely.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/qanelas?styles=47990" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <script src="js/likely.js" type="text/javascript"></script>
-  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
-    var quotes = [
-      "Краще б… <br />дороги поремонтували.",
-      "Краще б… <br />метро на&nbsp;Троєщину побудували.",
-      "Краще б… <br />під’їзд відремонтували.",
-      "Краще б… <br />з&nbsp;парковкою розібрались.",
-      "Краще б… <br />чимось корисним зайнялись.",
-      "Краще б… <br />чорний фон та&nbsp;жовтий текст зробили.",
-      "Краще б… <br />вагони поремонтували.",
-      "Краще б… <br />сквера зробили.",
-      "Краще б… <br />машину собі купили.",
-      "Краще б… <br />жовтим на синьому написали.",
-      "Краще б… <br />синім на жовтому написали.",
-      "Краще б… <br />лампочку вкрутили.",
-      "Краще б… <br />підсвітку зробили.",
-      "Краще б… <br />самі повкручували б&nbsp;табличку.",
-      "Краще б… <br />напис зробили, який світиться.",
-      "Краще б… <br />нічого не&nbsp;міняли.",
-      "Краще б… <br />street написали.",
-      "Краще б… <br />зробили кращегенератор.",
-      "Краще б… <br />ями в&nbsp;асфальті поремонтували.",
-      "Краще б… <br />дитячі садочки побудували.",
-      "Краще б… <br />зробили, коли наступний поїзд.",
-      "Краще б… <br />нормальний громадський транспорт зробили.",
-      "Краще б… <br />годинника додали.",
-      "Краще б… <br />метро на&nbsp;Виноградар побудували.",
-      "Краще б… <br />годинник час до&nbsp;прибуття поїзда показував.",
-      "Краще б… <br />карту на&nbsp;північ розвернули.",
-      "Краще б… <br />зробили світлодіодну панель з&nbsp;переліком всіх станцій.",
-      "Краще б… <br />нормальну вентиляцію в вагонах зробили.",
-      "Краще б… <br />ремонт в школах зробили.",
-      "Краще б… <br />якусь іншу вулицю перекрили.",
-      "Краще б… <br />свою Троєщину пішоходизували.",
-      "Краще б… <br />застосунок для телефону зробили.",
-      "Краще б… <br />нормальний сайт собі зробили."
-    ];
-
-    var quoteIndex = 0;
-
-    shuffleArray(quotes);
-
-    function shuffleArray(array) {
-      for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-      }
-    }
-
-    function newQuote() {
-      ++quoteIndex;
-      if (quoteIndex === quotes.length) {
-        quoteIndex = 0;
-      }
-
-      document.getElementById('quoteDisplay').innerHTML = quotes[quoteIndex];
-    }
-
-    function copyToClipboard(element) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
-      document.execCommand("copy");
-      $temp.remove();
-    }
-
-
-    function checkStat() {
-      document.getElementById('checked').style.display = 'inline-block';
-      setTimeout(function () { document.getElementById('checked').style.display = 'none'; }, 3000);
-    }
-
-  </script> -->
-
 
   <style type="text/css">
     h1 {
       margin: 0;
-      line-height: 1.1em;
+      line-height: 0.8em;
       font-size: 70px;
       font-weight: 900;
     }
@@ -126,6 +48,7 @@
       align-items: end;
       gap: 8px;
       cursor: pointer;
+      width: fit-content;
     }
 
     .logo-image {
@@ -154,6 +77,7 @@
 
       .bcontainer {
         margin-top: 25px;
+        margin-bottom: 25px;
       }
     }
 
@@ -164,6 +88,7 @@
 
       .bcontainer {
         margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       #quoteDisplay {
@@ -178,6 +103,7 @@
 
       .bcontainer {
         margin-top: 40px;
+        margin-bottom: 40px;
       }
 
       #quoteDisplay {
@@ -192,6 +118,7 @@
 
       .bcontainer {
         margin-top: 50px;
+        margin-bottom: 50px;
       }
 
       #quoteDisplay {
@@ -206,6 +133,7 @@
 
       .bcontainer {
         margin-top: 50px;
+        margin-bottom: 50px;
       }
 
       #quoteDisplay {
@@ -273,7 +201,7 @@
           <h1>
             дякую тобі за допомогу!
           </h1>
-          <h3>
+          <h3 class="mt-3">
             гуртом і Крим легше відбити
           </h3>
         </div>

@@ -185,18 +185,22 @@ main {
 }
 
 .postcard__title {
-  font-size: 56px;
+  font-size: min(10vw, 56px);
 }
 
 .postcard__subtitle {
   margin-top: 12px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: min(6vw, 24px);
+  line-height: 1.1;
 }
 
 .postcard__image {
   margin-top: 12px;
   transform: rotate(-3deg);
+}
+
+.postcard__image svg {
+  height: 100%;
 }
 </style>
 

@@ -20,12 +20,43 @@
   <link href="https://fonts.cdnfonts.com/css/qanelas?styles=47990" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/reset.css" rel="stylesheet">
+
+  <script type="text/javascript">
+    const quotes = [
+      "гуртом і Крим легше відбити",
+      "а ворожі міни тобі не подякують",
+      "стало на хороший турнікет більше",
+      "аж кров холоне в холодильнику",
+      "у Теплиці тепер на градус тепліше",
+      "це літак? ні, це птах? це донат від суперкотика!",
+      "оце ти крутанув колесо свободи!",
+    ];
+  
+    let quoteIndex = 0;
+  
+    shuffleArray(quotes);
+  
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
+    }
+  
+    function newDynamicText() {
+      ++quoteIndex;
+      if (quoteIndex === quotes.length) {
+        quoteIndex = 0;
+      }
+  
+      document.getElementById('dynamic-text').innerHTML = quotes[quoteIndex];
+    }
+  </script>
 </head>
 
-</style>
-</head>
-
-<body>
+<body onload="newDynamicText()">
   <main>
     <div class="postcard">
       <div class="postcard__content">
@@ -47,8 +78,9 @@
           <h1 class="postcard__title">
             дякую тобі за допомогу!
           </h1>
-          <p class="postcard__subtitle">
-            гуртом і Крим легше відбити
+          <p id="dynamic-text" class="postcard__subtitle">
+            <!-- гуртом і Крим легше відбити -->
+            &nbsp;
           </p>
         </div>
         <div class="postcard__image">
@@ -193,6 +225,7 @@ main {
   margin-top: 12px;
   font-size: min(6vw, 24px);
   line-height: 1.1;
+  height: 30px;
 }
 
 .postcard__image {
